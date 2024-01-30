@@ -1,0 +1,222 @@
+*{
+    margin:0px;
+    padding:0px;
+}
+body{
+    scroll-behavior: smooth;
+    font-family: Verdana, Geneva, Tahoma, sans-serif
+}
+.heading{
+    font-size: 40px;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-weight: bold;
+    margin:auto;
+    text-decoration: underline blue;
+}
+.down-arrow{
+    position: fixed;
+    bottom:40px;
+    right:20px;
+    font-size: 30px;
+    visibility: hidden;
+
+}
+.btn{
+    color:blue;
+}
+.up-arrow{
+    position: fixed;
+    bottom:40px;
+    right:70px;
+    font-size: 30px;
+    visibility: hidden
+}
+.main{
+    width:100%;
+    margin:auto;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap:wrap;
+
+}
+.infocontainer{
+    width:20vw;
+    min-width: 270px;
+    display:flex;
+    flex-direction: column;
+    border:2px solid rgb(11, 64, 143);
+    border-radius: 10%;
+    padding:10px;
+    justify-content: space-evenly;
+    margin-top: 50px;
+    box-shadow: -3px -4px 10px black;
+
+}
+.infocontainer:hover{
+    background-color:bisque ;
+}
+.details{
+
+    align-items: center;
+    height:80%;
+    margin:auto;
+    margin-top:10px;
+}
+.image{
+    width:150px;
+    height:150px;
+    border-radius: 50%;
+    margin:auto;
+    border:3px solid gray;
+}
+.image:hover{
+    transform: scale(1.04);
+
+}
+h4{
+    margin:20px;
+    font-weight: 400;
+}
+
+.details span{
+    font-family: cursive;
+    font-weight: 800;
+}
+.foot{
+    width: 100%;
+    max-width:400px;
+    text-align: center;
+    margin: auto;
+    color:blue;
+}
+.navbar{
+    width:100%;
+    z-index: 10;
+
+}
+.navbar ul{
+    display: flex;
+    justify-content: flex-end;
+    text-align: right;
+}
+li{
+    display:block;
+    margin:20px;
+    color:white;;
+    margin-top: 20px;
+}
+li a{
+    color:black;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    padding:15px;
+    font-family: poppins;
+
+    
+
+}
+.toggle-btn{
+    position: absolute;
+    z-index: 100;
+    top:-35px;
+    right:10px;
+    color:white;
+    font-size: 20px;
+    display:none;
+}
+
+.cross-btn{
+    position: absolute;
+    z-index: 100;
+    top:-50px;
+    right:10px;
+    color:white;
+    font-size: 25px;
+    visibility: hidden
+
+}
+li a:hover{
+    text-decoration: underline;
+}
+
+@media screen and (max-width:500px) {
+    .main{
+        overflow-x: hidden;
+        width:100%
+    }
+    .heading{
+        margin-top: 20px;
+    }
+    .infocontainer{
+        width:300px;
+        margin:auto;
+        margin-top:40px;
+        overflow:auto
+    }
+    .image{
+        width:140px;
+        height:140px;
+        margin-top:20px;
+    }
+    .details{
+        font-size: 18px;
+        margin-bottom: 10px;
+    }
+    .toplink{
+        right:10%;
+    }
+    .btmlink{
+        right:15%;
+    }
+    .menu{
+        display:flex;
+        flex-direction: column;
+    }
+    .menu{
+        text-align: center;
+        flex-direction: column;
+        justify-content: center;
+        margin-top:10px;
+        visibility: hidden;
+    }
+    
+    .active{
+        visibility: visible
+    }
+    .toggle-btn{
+        visibility: visible;
+        color:black;
+        top:15px;
+        right:10px;
+        position: fixed;
+    }
+    .cross-btn{
+        color:black;
+        top:15px;
+        right:10px;
+        position: fixed;
+        
+    }
+    .navbar{
+        height:50px;
+    }
+    .menu{
+        background-color: rgba(120,120,120,1);
+        position: fixed;
+        top:0px;
+        right:0px;
+        z-index:100
+    }
+    li{
+        margin-top: 40px;
+    }
+    .btn-container{
+        z-index: 1;
+    }
+}
+
+
+
+
