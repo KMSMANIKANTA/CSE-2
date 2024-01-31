@@ -185,64 +185,24 @@ button {
     .menu li{
         margin-top: 40px;
     }
-    .blackfortoggle{
-        visibility: hidden;
-        top:0px;
-    }
+    
     .active{
         visibility: visible
     }
     .toggle-btn{
         visibility: visible;
-        color:gray;
         top:15px;
         right:10px;
     }
-    .cross-btn{
-        color:gray;
-        visibility: hidden;
 
-    }
-    .btn-container1{
-        width:20vw;
-        margin:auto;
-        position: absolute;
-        top:70vh;
-        left:40vw;
-        transform: translate(-50%,-50%);
-    }
-    .btn-container2{
-        width:20vw;
-        margin:auto;
-        position: absolute;
-        top:80vh;
-        left:40vw;
-        transform: translate(-50%,-50%);
-        display:block
-    }
     .menu{
         display:flex;
         flex-direction: colum;
     }
-    .afterbgvideo {
-        width:auto;
-        display:flex;
-        height:fit-content;
-        flex-direction: column;
-        justify-content: center;
-        position: fixed;
-        top:5vh;
-        right:0%;
-        background-color: rgba(0,0,0,0.8);
-        z-index: 10;
-    }
-    .afterbgvideo li a{
-        color:white;
-    }
     .toggle-btn{
         z-index: 100;
         color:rgb(8, 253, 8);
-        
+        visibility: visible;
         position: fixed;
         top:15px;
         right:10px;
@@ -252,6 +212,18 @@ button {
         color:red;
         position: fixed;
         top:15px;
+        visibility: hidden;
         right:10px;
+    }
+    .btnlinks{
+        height:20vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    button{
+        padding: 0px;
+        margin-top: 0px;
+        overflow: hidden;
     }
 }
