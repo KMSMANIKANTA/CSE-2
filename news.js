@@ -211,8 +211,32 @@ const news=[
     },
     {
         sno:49,
+        src:"30-01-2024.jpg",
+        date:"30-01-2024",
+        category:"E1-Sem2"
+    },
+    {
+        
+        sno:50,
         src:"31-01-2024.jpg",
         date:"31-01-2024",
+        category:"E1-Sem2"
+    },{
+        sno:51,
+        src:"01-02-2024.jpg",
+        date:"01-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:52,
+        src:"02-02-2024.jpg",
+        date:"02-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:53,
+        src:"03-02-2024.jpg",
+        date:"03-02-2024",
         category:"E1-Sem2"
     }
     
@@ -228,6 +252,7 @@ const navbar=document.querySelector(".navbar")
 const menu=document.querySelector(".menu")
 const topbtn=document.querySelector(".toplink")
 const btmbtn=document.querySelector('.btmlink')
+
 window.addEventListener("DOMContentLoaded",function(){
 
     var str=news.map(function(singlenews){
@@ -288,12 +313,11 @@ window.addEventListener('scroll',function(){
 toggleBtn.addEventListener("click",function(){
     menu.classList.add("active")
     toggleBtn.style.visibility="hidden"
-    crossBtn.classList.add("active")
-    navbar.style.height="fitcontent"
+    crossBtn.style.visibility="visible"
 })
 crossBtn.addEventListener("click",function(){
     menu.classList.remove("active")
     toggleBtn.style.visibility="visible"
-    crossBtn.classList.remove('active')
-    navbar.style.height="0px"
+    crossBtn.style.visibility="hidden"
+
 })
