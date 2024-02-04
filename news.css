@@ -56,7 +56,7 @@ li a{
 
 }
 .toggle-btn{
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top:-35px;
   right:10px;
@@ -66,13 +66,13 @@ li a{
 }
 
 .cross-btn{
-  position: absolute;
+  position: fixed;
   z-index: 100;
   top:-50px;
   right:10px;
   color:white;
   font-size: 25px;
-  visibility: hidden
+  display:none;
 
 }
 li a:hover{
@@ -240,20 +240,25 @@ li a:hover{
         width:90vw;
         margin-bottom: 0px;
     }
-    .menu{
-      display:flex;
-      flex-direction: column;
-  }
+   
   .menu{
-      text-align: center;
+    display:flex;
       flex-direction: column;
       justify-content: center;
       margin-top:10px;
-      visibility: hidden;
+      width:100%;
+      margin:auto;
+      align-items: center;
+      position:fixed;
+      left:-100%;
+      z-index: 10;
+      background-color: azure;
+      transition:1s ;
+      border-radius: 20px;
   }
   
   .active{
-      visibility: visible
+    left:0%
   }
   .toggle-btn{
       visibility: visible;
@@ -261,24 +266,21 @@ li a:hover{
       top:15px;
       right:10px;
       position: fixed;
+      z-index: 100;
   }
   .cross-btn{
-      color:black;
-      top:15px;
-      right:10px;
-      position: fixed;
+    color:black;
+    top:15px;
+    right:10px;
+    position: fixed;
+    z-index: 100;
+    visibility: hidden;
       
   }
   .navbar{
       height:50px;
   }
-  .menu{
-      background-color: rgba(120,120,120,1);
-      position: fixed;
-      top:0px;
-      right:0px;
-      z-index: 100;
-  }
+  
   .btn-container{
     z-index: 10;
   }
