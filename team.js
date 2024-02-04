@@ -345,13 +345,12 @@ window.addEventListener("scroll",function(){
 toggleBtn.addEventListener("click",function(){
     menu.classList.add("active")
     toggleBtn.style.visibility="hidden"
-    crossBtn.classList.add("active")
-    navbar.style.height="fitcontent"
+    crossBtn.style.visibility="visible"
+
     
 })
 crossBtn.addEventListener("click",function(){
     menu.classList.remove("active")
     toggleBtn.style.visibility="visible"
-    crossBtn.classList.remove('active')
-    navbar.style.height="0px"
+    crossBtn.style.visibility="visible"
 })
