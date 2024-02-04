@@ -186,6 +186,8 @@ li a:hover{
         left:-100%;
         transition: 1s ;
     }
+    .menu{
+        background-color:azure;
     .active{
         left:0%
     }
