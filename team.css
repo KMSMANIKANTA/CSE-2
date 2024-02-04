@@ -176,17 +176,18 @@ li a:hover{
     .menu{
         display:flex;
         flex-direction: column;
-    }
-    .menu{
         text-align: center;
         flex-direction: column;
         justify-content: center;
-        margin-top:10px;
-        visibility: hidden;
+        align-items: center;
+        width:100%;
+        position: fixed;
+        background-color: azure;
+        left:-100%;
+        transition: 1s ;
     }
-    
     .active{
-        visibility: visible
+        left:0%
     }
     .toggle-btn{
         visibility: visible;
@@ -200,17 +201,11 @@ li a:hover{
         top:15px;
         right:10px;
         position: fixed;
+        visibility: hidden
         
     }
     .navbar{
         height:50px;
-    }
-    .menu{
-        background-color: rgba(120,120,120,1);
-        position: fixed;
-        top:0px;
-        right:0px;
-        z-index:100
     }
     li{
         margin-top: 40px;
