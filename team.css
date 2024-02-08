@@ -180,14 +180,13 @@ li a:hover{
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        border-radius:20px;
         width:100%;
         position: fixed;
         background-color: azure;
         left:-100%;
         transition: 1s ;
     }
-    .menu{
-        background-color:azure;
     .active{
         left:0%
     }
