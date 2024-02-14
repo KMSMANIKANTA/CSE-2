@@ -238,6 +238,54 @@ const news=[
         src:"03-02-2024.jpg",
         date:"03-02-2024",
         category:"E1-Sem2"
+    },
+    {
+        sno:54,
+        src:"05-02-2024.jpg",
+        date:"05-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:55,
+        src:"06-02-2024.jpg",
+        date:"06-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:56,
+        src:"07-02-2024.jpg",
+        date:"07-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:57,
+        src:"08-02-2024.jpg",
+        date:"08-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:58,
+        src:"09-02-2024.jpg",
+        date:"09-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:59,
+        src:"12-02-2024.jpg",
+        date:"09-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:60,
+        src:"13-02-2024.jpg",
+        date:"13-02-2024",
+        category:"E1-Sem2"
+    },
+    {
+        sno:61,
+        src:"14-02-2024.jpg",
+        date:"14-02-2024",
+        category:"E1-Sem2"
     }
     
     ]
