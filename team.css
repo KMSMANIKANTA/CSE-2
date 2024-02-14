@@ -191,18 +191,18 @@ li a:hover{
         left:0%
     }
     .toggle-btn{
-        visibility: visible;
+        display:block;
         color:black;
         top:15px;
         right:10px;
-        position: fixed;
+        visibility: visible;
     }
     .cross-btn{
         color:black;
         top:15px;
         right:10px;
         position: fixed;
-        visibility: hidden
+        visibility: hidden;
         
     }
     .navbar{
