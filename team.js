@@ -352,5 +352,5 @@ toggleBtn.addEventListener("click",function(){
 crossBtn.addEventListener("click",function(){
     menu.classList.remove("active")
     toggleBtn.style.visibility="visible"
-    crossBtn.style.visibility="visible"
+    crossBtn.style.visibility="hidden"
 })
