@@ -79,12 +79,14 @@ li a:hover{
     position: fixed;
     top:50%;
     left:50%;
-    height:20vh;
     display: flex;
     justify-content: space-between;
     padding:5px;
     flex-direction: column;
     transform: translate(-50%,-50%);
+}
+.btnlinks a{
+    margin-top: 20px;
 }
 button {
     position: relative;
