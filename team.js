@@ -17,7 +17,7 @@ const data=[
     {
     id:"N210039",
     name:"M.Mahendra",
-    role:"Student"
+    role:"News Reporting"
     },
     {
     id:"N210040",
@@ -82,7 +82,7 @@ const data=[
     {
     id:"N210204",
     name:"M.Gopi Jagadeesh",
-    role:"Deputy"
+    role:"Deputy CR"
     },
     {
     id:"N210216",
@@ -202,7 +202,7 @@ const data=[
     {
     id:"N210624",
     name:"K.Kanakamahalakshmi",
-    role:"Student"
+    role:"Deputy CR"
     },
     {
     id:"N210633",
@@ -287,7 +287,7 @@ const data=[
     {
     id:"N211057",
     name:"V.Prem Chand",
-    role:"News Reporting"
+    role:"Student"
     },
     {
     id:"N211086",
@@ -298,9 +298,11 @@ const data=[
     id:"N211101",
     name:"D.Thamad Khan",
     role:"Student"
+    },{
+        id:"N190993",
+        name:"A Pawan Kalyan",
+        role:"Student"
     }
-
-    
     ]
  const toggleBtn=document.querySelector(".toggle-btn")
  const crossBtn=document.querySelector(".cross-btn")
@@ -311,9 +313,8 @@ const btn=document.querySelectorAll(".btn")
 window.addEventListener("DOMContentLoaded",function(){
     var str=data.map(function(singleitem){
         return `
-        
         <div class="infocontainer">
-            <img src="https://intranet.rguktn.ac.in/SMS/usrphotos/user/${singleitem.id}.jpg" alt="${singleitem.id}" class="image" >
+            <img src="https://intranet.rguktn.ac.in/SMS/usrphotos/user/${singleitem.id}.jpg"  class="image" >
             <div class="details">
                 <h4 id="name"  > <span > Name&nbsp;&nbsp;:</span>${singleitem.name}</h1>
                 <h4 id="idno" ><span >Id&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</span>${singleitem.id}</h4>
